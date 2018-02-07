@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.huisou.dao.ProductMapper">
+    
+
+    <select id="findAll"  resultType="com.huisou.domain.Product">
+  		select  id,wid,category_id,price,sold_num,title,img,uv_num,pv_num,status,created_at,updated_at,deleted_at  from ds_product;
+  </select>
+  
+</mapper>
